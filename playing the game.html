@@ -14,6 +14,17 @@
     </script>
 
     <style>
+    body
+    {
+      background-image:url("background.jpg");
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+    #active
+    {
+      color:red;
+      text-decoration:underline;
+    }
     a{
       color:black;
       text-decoration: none;
@@ -21,6 +32,7 @@
     h1{
       font-size:45px;
       text-align:center;
+      color:skyblue;
     }
 
     </style>
@@ -30,10 +42,10 @@
     <h1><strong>교통사고</strong></h1><br>
 
     <h2><a href="https://www.youtube.com/watch?v=SgfH1DJxghk"
-    target="_blank" title="3d 자동차 시뮬레이터" style="color:red;text-decoration:underline">4.게임 실행 영상</a></h2>
+    target="_blank" title="3d 자동차 시뮬레이터" id="active">4.게임 실행 영상</a></h2>
 
       <img src="car1.png" width="200px"><br>
-      게임 화면<br><br>
+      <span style="color:lightyellow">게임 화면<br><br>
 
       <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SgfH1DJxghk"
