@@ -19,60 +19,74 @@
       background-image:url("background.jpg");
       background-repeat:no-repeat;
       background-size:cover;
-
+      margin:0;
     }
       .saw2
       {
         color:lightyellow;
         text-decoration:underline;
+        font-size:35px;
       }
       a{
-        color:black;
+        color:lightyellow;
         text-decoration: none;
+        border:solid orange 6px;
+        padding:10px;
+        margin:0;
+        width:100px;
+        color:lightyellow;
       }
       h1{
         font-size:45px;
         text-align:center;
         color:lightyellow;
+        border-bottom:3px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      h2{
+        color:lightyellow;
+        border-right:3px solid gray;
+        width:220px;
+        margin:0;
+        padding:10px;
       }
       ol
       {
         color:lightyellow;
+        border-right:3px solid gray;
+        width: 200px;
+        margin:0;
+        text-align:left;
       }
-
+      #grid{
+        display:grid;
+        grid-template-columns:250px 1fr;
+      }
+      .saw3{
+        font-size:20px;
+        color:lightyellow;
+      }
     </style>
 
   </head>
   <body>
-    <h1><strong>교통사고</strong></h1><br>
-
-      <h2 class="saw2">3. 게임 규칙 및 방법</h2>
-      <ol>
-        <li>~~~</li>
-        <li>~~~</li>
-      </ol>
-      <p>
-
-        <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://jang111-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-      </p>
+    <h1><strong>교통사고</strong></h1>
+    <h2>목차</h2>
+  <div id="grid">
+    <ol>
+      <br><li><a href="introduction.html">소개 및 제작 동기</a></li><br><br>
+      <li><a href="game producing.html" >게임 제작 과정</a></li><br><br>
+      <li><a href="the rule of game.html" >게임 규칙 및 방법</a></li><br><br>
+      <li><a href="playing the game.html" >게임 실행 영상</a></li>
+    </ol>
+    <div>
+      <div class="saw2">3. 게임 규칙 및 방법</div>
+    <div class="saw3">
+      1.~~~<br>
+      2.~~~
+    </div>
+    </div>
+  </div>
   </body>
 </html>

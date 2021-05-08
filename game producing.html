@@ -19,35 +19,69 @@
       background-image:url("background.jpg");
       background-repeat:no-repeat;
       background-size:cover;
-
+      color:lightyellow;
+      margin:0;
     }
     .saw1
     {
       color:lightyellow;
       text-decoration:underline;
+      font-size:35px;
     }
     a{
-      color:black;
       text-decoration: none;
+      border:solid orange 6px;
+      padding:10px;
+      margin:0;
+      width:100px;
+      color:lightyellow;
     }
     h1{
       font-size:45px;
-      text-align: center;
-      color:lightyellow;
+      text-align:center;
+      color:Lightyellow;
+      border-bottom:3px solid gray;
+      margin:0;
+      padding:20px
     }
     li
     {
       color:lightyellow;
     }
-
+    h2{
+      color:lightyellow;
+      border-right:3px solid gray;
+      width:190px;
+      margin:0;
+      padding:10px;
+    }
+    
+    #grid{
+      display:grid;
+      grid-template-columns:250px 1fr;
+    }
+    ol{
+      color:lightyellow;
+      border-right:3px solid gray;
+      width:170px;
+      margin:0;
+      text-align:left;
+    }
     </style>
 
   </head>
   <body>
-    <h1><strong>교통사고</strong></h1><br>
-
-      <h2 class="saw1">2. 게임 제작 과정</h2>
-      <ol>
+    <h1><strong>교통사고</strong></h1>
+    <h2>목차</h2>
+  <div id="grid">
+    <ol>
+      <br><li><a href="introduction.html">소개 및 제작 동기</a></li><br><br>
+      <li><a href="game producing.html" >게임 제작 과정</a></li><br><br>
+      <li><a href="the rule of game.html" >게임 규칙 및 방법</a></li><br><br>
+      <li><a href="playing the game.html" >게임 실행 영상</a></li>
+    </ol>
+    <div>
+      <div class="saw1">2. 게임 제작 과정</div><br>
         <li>게임 스토리 및 디자인 설계</li>
           <span style="color:lightyellow">(1)게임 스토리 : ~~<br>
           <span style="color:lightyellow">(2)디자인 설계 : ~~<br><br>
@@ -56,30 +90,7 @@
         <li>기본 알고리즘</li><br><br>
         <img src="algorithm.png" width="60%"><br><br>
         <img src="algorithm1.png" width="60%"><br>
-
-      </ol>
-      <p>
-
-        <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://jang111-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-      </p>
+    </div>
+  </div>
   </body>
 </html>
